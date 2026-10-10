@@ -91,7 +91,6 @@ export default async function ProductPage({
           </div>
         </div>
 
-        {/* Current price box */}
         <div className="bg-brand-light rounded-xl p-4 md:min-w-45 text-right shrink-0">
           <div className="text-xs text-gray-600 mb-1">আজকের দাম</div>
           <div className="text-3xl font-bold text-gray-900">
@@ -102,14 +101,14 @@ export default async function ProductPage({
         </div>
       </div>
 
-      {/* ─── Min / Max / Avg ─── */}
+   
       <div className="grid sm:grid-cols-3 gap-4">
         <StatCard label="সর্বনিম্ন দাম" value={p.min} icon="⬇️" />
         <StatCard label="সর্বোচ্চ দাম" value={p.max} icon="⬆️" />
         <StatCard label="গড় দাম" value={p.avg} icon="📊" />
       </div>
 
-      {/* ─── Price Trend ─── */}
+      
       <div>
         <h2 className="font-semibold mb-3 text-lg">দামের ধারা</h2>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
@@ -196,7 +195,7 @@ export default async function ProductPage({
         </div>
       )}
 
-      {/* ─── Related products ─── */}
+     
       {related.length > 0 && (
         <div>
           <h2 className="font-semibold mb-3 text-lg">
@@ -213,7 +212,7 @@ export default async function ProductPage({
   );
 }
 
-// ─── Small helper components ───
+
 
 function StatCard({
   label,
