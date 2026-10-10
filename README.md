@@ -362,6 +362,13 @@ Create a `.env.local` file in the root directory if required.
 # Refer to the existing source code for the exact variable names.
 ```
 
+For production social sign-in, set `NEXT_PUBLIC_APP_URL` to the same canonical
+origin as `BETTER_AUTH_URL`. Do not use a preview deployment URL for one and the
+production URL for the other; the OAuth state cookie must be set and read on the
+same host. Configure Google's authorized redirect URI as
+`<BETTER_AUTH_URL>/api/auth/callback/google`. Localhost development continues to
+use the local browser origin.
+
 Never commit API keys, database credentials or authentication secrets.
 
 ### 5. Start the Development Server
