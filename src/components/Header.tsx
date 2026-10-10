@@ -5,27 +5,28 @@ import DateLabel from "./DateLabel";
 import UserMenu from "./UserMenuDropdown";
 import CategoryMenu from "./CategoryMenu";
 import PriceMarquee from "./PriceMarquee";
-import logo from "../../public/image/logo-icon.png";
+import logo from "../../public/image/logo.png";
 
 export default function Header() {
   return (
     <header className="sticky top-0 z-40 bg-white shadow-sm">
       <div className="max-w-6xl mx-auto flex items-center justify-between px-4 py-3 gap-2">
         <Link href="/" className="flex items-center gap-3 shrink-0">
-          <div className="w-10 h-10 bg-green-700 rounded-md flex items-center justify-center">
+         
+          <div className="flex items-center justify-center">
             <Image
               src={logo}
               alt="বাজার দর"
-              width={28}
-              height={28}
+              width={50}
+              height={50}
               priority
-              className="object-contain brightness-0 invert"
+              className="object-contain"
             />
           </div>
           <div className="leading-tight">
             <div className="font-bold text-gray-900 text-lg">বাজার দর</div>
 
-            {/* ✅ Suspense boundary for async DateLabel */}
+          
             <Suspense
               fallback={
                 <div className="w-32 h-3 bg-gray-100 rounded animate-pulse" />
@@ -42,7 +43,7 @@ export default function Header() {
       </div>
 
       <Suspense fallback={<NavCategoriesSkeleton />}>
-        <CategoryMenu/>
+        <CategoryMenu />
       </Suspense>
 
       <Suspense fallback={<PriceMarqueeSkeleton />}>
@@ -52,7 +53,7 @@ export default function Header() {
   );
 }
 
-// ─── Fallback skeletons ───
+
 
 function NavAuthSkeleton() {
   return (

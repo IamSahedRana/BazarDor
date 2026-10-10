@@ -71,7 +71,7 @@ export default function SignInForm() {
             }
             className="w-full flex items-center justify-center gap-2 border border-gray-200 rounded-lg py-2.5 hover:bg-gray-50 text-sm"
           >
-            <FaGoogle className="text-red-500" /> Google দিয়ে সাইন ইন
+            <FaGoogle className="fa-brands fa-google"/> Google দিয়ে সাইন ইন
           </button>
           <button
             type="button"
