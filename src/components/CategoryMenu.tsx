@@ -19,7 +19,7 @@ export default function NavCategories() {
   return (
     <nav className="border-t border-gray-100 bg-white">
       <div className="max-w-6xl mx-auto">
-        {/* ✅ Horizontal scroll container with fade edges */}
+       
         <div className="relative">
           <ul className="flex gap-1 overflow-x-auto scrollbar-hide scroll-smooth-touch px-4">
             {cats.map((c) => {
@@ -41,7 +41,7 @@ export default function NavCategories() {
             })}
           </ul>
 
-          {/* ✅ Right fade indicator (mobile only) */}
+          
           <div className="pointer-events-none absolute right-0 top-0 bottom-0 w-8 bg-linear-to-l from-white to-transparent md:hidden" />
         </div>
       </div>
