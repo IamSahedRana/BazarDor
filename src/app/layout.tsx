@@ -5,7 +5,7 @@ import SiteFooter from "@/components/SiteFooter";
 import { ToastProviderWrapper } from "@/components/ToastProvider";
 
 export const metadata: Metadata = {
-  title: "বাজার দর — প্রয়োজনীয় পণ্যের দাম এক নজরে",
+  title: "Bazar Dor",
   description:
     "চাল, ডাল, তেল, সবজি, মাছ, মাংস সহ নিত্যপ্রয়োজনীয় পণ্যের আজকের বাজারদর।",
 };

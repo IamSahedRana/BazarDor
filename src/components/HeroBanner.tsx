@@ -5,7 +5,7 @@ import { formatBnDate } from "@/lib/utils";
 import banner from "../../public/image/bazar-hero.png";
 
 export default async function HeroBanner() {
-  // ✅ Force dynamic — প্রতি request এ নতুন date
+ 
   await connection();
 
   const today = formatBnDate();
