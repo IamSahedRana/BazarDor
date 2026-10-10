@@ -196,7 +196,6 @@ Built using Next.js, React, and TypeScript.
 
 </div>
 
-> **Screenshot setup:** Save screenshots of your actual application inside `public/screenshots/` using the filenames shown above. Replace or remove any screenshot section that does not match an existing feature. These relative paths will display your images directly on GitHub.
 
 
 
