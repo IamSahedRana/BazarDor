@@ -1,4 +1,3 @@
-// ─── Raw API Category ───
 export type RawCategory = {
   id: string;
   nameBn: string;
@@ -6,7 +5,6 @@ export type RawCategory = {
   count?: number;
 };
 
-// ─── App-friendly Category ───
 export type Category = {
   id: string;
   name: string;
